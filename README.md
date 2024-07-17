@@ -5,6 +5,8 @@ This project is a sample web scraper for extracting data about 90's rock bands u
 ## Features
 
 - Scrapes band name, charting status, and member death information.
+- Handles pagination to scrape multiple pages of data.
+- Includes error handling and logging.
 - Saves the scraped data to a CSV file.
 
 ## Setup
@@ -34,13 +36,23 @@ This project is a sample web scraper for extracting data about 90's rock bands u
 
 2. **Check the output CSV file:** `rock_bands.csv` will be created in the project directory.
 
+## Project Structure
+
+```
+rock_bands_scraper/
+├── scraper.py
+├── README.md
+├── .gitignore
+├── venv/
+└── rock_bands.csv (generated after running the script)
+```
+
 ## Future Improvements
 
-- Handle pagination for websites with multiple pages of data.
-- Add error handling and logging.
-- Expand the scraper to collect more detailed information.
+- Expand the scraper to collect more detailed information about each band.
+- Add support for additional data sources.
+- Implement a more robust data cleaning and validation process.
 
 ## License
 
 This project is licensed under the MIT License.
-
